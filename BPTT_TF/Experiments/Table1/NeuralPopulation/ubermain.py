@@ -33,9 +33,9 @@ if __name__ == '__main__':
     import os
     os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
     # number of runs for each experiment
-    n_runs = 20
+    n_runs = 2
     # number of runs to run in parallel
-    n_cpu = 20
+    n_cpu = 2
     # number of processes run parallel on a single GPU
     n_proc_per_gpu = 1
 

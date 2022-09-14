@@ -140,7 +140,10 @@ def create_tasks_from_arguments(args: List[Argument],
 
     return tasks, pp
 
-
+def create_runsforNodes(tasks,n_cpu):
+    with open('tasks.txt','wt') as fi:
+        for task in tasks:
+            fi.writelines(task.command)
 def run_settings(tasks, n_cpu):
     pool = mp.Pool(processes=n_cpu)
     pool.map(process_task, tasks, chunksize=1)
