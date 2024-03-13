@@ -1,0 +1,14 @@
+name: BPTT_TF
+channels:
+  - pytorch
+  - defaults
+dependencies: 
+  - cudatoolkit     
+  - python=3.9
+  - pytorch=1.11.0
+  - pytorch-mutex
+  - pandas
+  - seaborn
+  - tensorboard
+  - tensorboardx
+prefix: /home/florian.hess/miniconda3/envs/BPTT_TF

@@ -26,6 +26,7 @@ def ubermain(n_runs):
     args.append(Argument('learning_rate', [1e-3]))
     args.append(Argument('gradient_clipping', [10]))
     args.append(Argument('run', list(range(1, 1 + n_runs))))
+    args.append(Argument('use_gpu', [1]))
     return args
 
 
